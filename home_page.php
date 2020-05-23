@@ -33,9 +33,17 @@
         // whosname은 임의의 이름이며 진짜 값이 들어있는 변수는 $argName이다.
         // 아래의 구문은 현재 있는 변수의 값을 whosname로 한다는 의미?
         $this->whosname = $argName;
+        print "클래스 생성자"
       }
       function printMyname(){
         echo $this->whosname;
+      }
+
+      function MySecondClass extends MyFirstClass{
+        function __construct()
+        {
+          print "클래스 생성자"
+        }
       }
     }
 
